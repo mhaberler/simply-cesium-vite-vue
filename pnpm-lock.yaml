@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   cesium:
-    specifier: ^1.111.0
-    version: 1.111.0
+    specifier: ^1.112.0
+    version: 1.112.0
   vue:
     specifier: ^3.3.8
     version: 3.3.8
@@ -51,8 +51,8 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
 
-  /@cesium/engine@6.1.0:
-    resolution: {integrity: sha512-gufv2rfvbPVA3foYrMP+8RBOpH9z8zq6PaHqFOSCmNlRDPDsoAhsjGAog+sjFz1ybFiQ2/DY84YB/2cjs+DYxw==}
+  /@cesium/engine@6.1.1:
+    resolution: {integrity: sha512-PY8A742SR5rHagjaDCG7G6LWYeMXdyBJOoTkkaaLGh4XYBCdan/aygPO0CTTq26hAyjf9Ugi7HCoRe0ruNvgGg==}
     engines: {node: '>=14.0.0'}
     dependencies:
       '@tweenjs/tween.js': 21.0.0
@@ -68,7 +68,7 @@ packages:
       ktx-parse: 0.6.0
       lerc: 2.0.0
       mersenne-twister: 1.1.0
-      meshoptimizer: 0.19.0
+      meshoptimizer: 0.20.0
       pako: 2.1.0
       protobufjs: 7.2.5
       rbush: 3.0.1
@@ -76,11 +76,11 @@ packages:
       urijs: 1.19.11
     dev: false
 
-  /@cesium/widgets@4.3.0:
-    resolution: {integrity: sha512-TZoJJJpv6Jp6bEl0t+nSQwGYvttp4RJbB6oYbtJPPqURz/JP/kYd+hAF+uV0DefRws3yl6waDDZ3Lrd09Ype4g==}
+  /@cesium/widgets@4.3.1:
+    resolution: {integrity: sha512-uT2cCd6D2JOxtDsvh0VzbrlKOvAJROacDPq2OXE7muHWx/FkXXL0Q6+ZWGbMuCdv/KsiMJpRUiU9jJDX9AS01A==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@cesium/engine': 6.1.0
+      '@cesium/engine': 6.1.1
       nosleep.js: 0.12.0
     dev: false
 
@@ -583,12 +583,12 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /cesium@1.111.0:
-    resolution: {integrity: sha512-wWtBa1KIMIJZR39U4Tv+CkJUeCfi83eVjCLxblYilD9zd4gb7vm3V9ytmJ0+v0sqk9RQws5JOg7Hobbs9ODTxQ==}
+  /cesium@1.112.0:
+    resolution: {integrity: sha512-johaLB97GIBZF9qEfKHc04vQHgh3B0tikFE+QA5W+ZsL97KQjTcdlgwGNxCT2yMCgN5hZ+eSynoQhkqLdFuUDA==}
     engines: {node: '>=14.0.0'}
     dependencies:
-      '@cesium/engine': 6.1.0
-      '@cesium/widgets': 4.3.0
+      '@cesium/engine': 6.1.1
+      '@cesium/widgets': 4.3.1
     dev: false
 
   /chokidar@3.5.3:
@@ -801,8 +801,8 @@ packages:
     resolution: {integrity: sha512-mUYWsMKNrm4lfygPkL3OfGzOPTR2DBlTkBNHM//F6hGp8cLThY897crAlk3/Jo17LEOOjQUrNAx6DvgO77QJkA==}
     dev: false
 
-  /meshoptimizer@0.19.0:
-    resolution: {integrity: sha512-58qz5Qc/6Geu8Ib3bBWERE5R7pM5ErrJVo16fAtu6ryxVaE3VAtM/u2vurDxaq8AGZ3yWxuM/DnylTga5a4XCQ==}
+  /meshoptimizer@0.20.0:
+    resolution: {integrity: sha512-olcJ1q+YVnjroRJpCL1Dj5aZxr2JMr2hRutMUwhuHZvpAL7SIZgOT6eMlFF4TbBGSR89tawE/gqB79J/LrW/Nw==}
     dev: false
 
   /micromatch@4.0.5:
