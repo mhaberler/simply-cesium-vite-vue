@@ -5,6 +5,7 @@ import vue from '@vitejs/plugin-vue'
 
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 import { viteExternalsPlugin } from 'vite-plugin-externals'
+import viteCompression from 'vite-plugin-compression';
 
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
@@ -26,6 +27,13 @@ export default defineConfig(({ mode }) => {
 
   return {
     plugins: [
+      viteCompression({
+        verbose: true,
+        disable: mode == 'development',
+        // algorithm: 'gzip',
+        algorithm: 'brotliCompress',
+        deleteOriginFile: true
+      }),
       vue(),
       copyCesium(['Assets', 'ThirdParty', 'Widgets', 'Workers']),
       viteExternalsPlugin(
