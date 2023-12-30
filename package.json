@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test:unit": "vitest"
+    "test:unit": "vitest",
+    "deploy" : "rsync -avz --delete dist/ mah@mah.priv.at:/var/www/static.mah.priv.at/apps/flight/"
   },
   "dependencies": {
-    "cesium": "^1.111.0",
+    "cesium": "^1.112.0",
     "vue": "^3.3.8"
   },
   "devDependencies": {
